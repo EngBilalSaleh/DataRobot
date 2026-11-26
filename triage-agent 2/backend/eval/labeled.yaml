@@ -1,0 +1,290 @@
+# Hand-labeled evaluation set (synthetic)
+- {
+    lang: en,
+    intent: billing,
+    urgency: medium,
+    queue: Billing Tier 1,
+    text: "My bill is 60 riyals more than last month and I haven't changed anything.",
+  }
+- {
+    lang: en,
+    intent: billing,
+    urgency: medium,
+    queue: Billing Tier 1,
+    text: "Why was I charged for roaming? I was in Dubai but only used hotel Wi-Fi.",
+  }
+- {
+    lang: en,
+    intent: billing,
+    urgency: low,
+    queue: Billing Tier 1,
+    text: "What payment methods can I use for my postpaid bill?",
+  }
+- {
+    lang: en,
+    intent: billing,
+    urgency: high,
+    queue: Billing Tier 2,
+    text: "You charged my card twice for the same bill, 450 SAR each. I need one refunded today.",
+  }
+- {
+    lang: en,
+    intent: billing,
+    urgency: medium,
+    queue: Billing Tier 1,
+    text: "I paid yesterday through SADAD but the app still shows my bill as unpaid.",
+  }
+- {
+    lang: en,
+    intent: billing,
+    urgency: medium,
+    queue: Billing Tier 1,
+    text: "I want to dispute a 25 SAR add-on charge I never subscribed to.",
+  }
+- {
+    lang: en,
+    intent: technical,
+    urgency: high,
+    queue: Technical Tier 2,
+    text: "Home fiber has been completely down since last night, the LOS light is red.",
+  }
+- {
+    lang: en,
+    intent: technical,
+    urgency: medium,
+    queue: Technical Tier 1,
+    text: "Mobile data is very slow in the evenings at my home in Al Malqa.",
+  }
+- {
+    lang: en,
+    intent: technical,
+    urgency: medium,
+    queue: Technical Tier 1,
+    text: "The eSIM QR code you sent doesn't work, activation fails every time.",
+  }
+- {
+    lang: en,
+    intent: technical,
+    urgency: medium,
+    queue: Technical Tier 1,
+    text: "My Wi-Fi keeps disconnecting but the cable connection works fine.",
+  }
+- {
+    lang: en,
+    intent: technical,
+    urgency: high,
+    queue: Technical Tier 2,
+    text: "No signal at all on my phone since this morning, I can't make calls.",
+  }
+- {
+    lang: en,
+    intent: account,
+    urgency: low,
+    queue: Accounts,
+    text: "How do I upgrade to a bigger data plan, and when does it start?",
+  }
+- {
+    lang: en,
+    intent: account,
+    urgency: low,
+    queue: Accounts,
+    text: "I'd like to transfer my line to my wife's name.",
+  }
+- {
+    lang: en,
+    intent: account,
+    urgency: medium,
+    queue: Accounts,
+    text: "I forgot my app password and the reset code never arrives.",
+  }
+- {
+    lang: en,
+    intent: account,
+    urgency: low,
+    queue: Accounts,
+    text: "Can I downgrade my plan? Mine is too expensive now.",
+  }
+- {
+    lang: en,
+    intent: fraud,
+    urgency: critical,
+    queue: Fraud & Security,
+    risk: [fraud],
+    text: "Someone transferred 2,000 SAR out of my Sahab Pay wallet an hour ago. It wasn't me!",
+  }
+- {
+    lang: en,
+    intent: fraud,
+    urgency: high,
+    queue: Fraud & Security,
+    risk: [fraud],
+    text: "A caller claiming to be from Sahab asked for my OTP. I didn't give it, but is my account safe?",
+  }
+- {
+    lang: en,
+    intent: fraud,
+    urgency: critical,
+    queue: Fraud & Security,
+    risk: [fraud],
+    text: "My phone suddenly says no service and I got an SMS about a SIM replacement I never asked for.",
+  }
+- {
+    lang: en,
+    intent: fraud,
+    urgency: high,
+    queue: Fraud & Security,
+    risk: [fraud],
+    text: "There's a wallet payment to a merchant I've never heard of. I did not make this purchase.",
+  }
+- {
+    lang: en,
+    intent: complaint,
+    urgency: medium,
+    queue: Customer Relations,
+    text: "This is the second time the technician didn't show up. Terrible service, I want to escalate.",
+  }
+- {
+    lang: en,
+    intent: complaint,
+    urgency: high,
+    queue: Customer Relations,
+    risk: [regulator],
+    text: "My issue has been open for three weeks. If it isn't solved I'm going to the CST.",
+  }
+- {
+    lang: en,
+    intent: complaint,
+    urgency: high,
+    queue: Customer Relations,
+    risk: [legal],
+    text: "I've spoken to my lawyer about how you've handled my contract cancellation.",
+  }
+- {
+    lang: en,
+    intent: other,
+    urgency: low,
+    queue: General,
+    text: "What time does the Olaya store open on Friday?",
+  }
+- {
+    lang: en,
+    intent: other,
+    urgency: low,
+    queue: General,
+    text: "Do you have any jobs open in customer service?",
+  }
+- {
+    lang: ar,
+    intent: billing,
+    urgency: medium,
+    queue: Billing Tier 1,
+    text: "فاتورتي هذا الشهر أعلى من المعتاد بخمسين ريال ولم أغير باقتي.",
+  }
+- {
+    lang: ar,
+    intent: billing,
+    urgency: medium,
+    queue: Billing Tier 1,
+    text: "أريد الاعتراض على رسوم تجوال لم أستخدمها.",
+  }
+- {
+    lang: ar,
+    intent: billing,
+    urgency: high,
+    queue: Billing Tier 2,
+    text: "تم خصم مبلغ الفاتورة مرتين من بطاقتي، أريد استرجاع المبلغ اليوم.",
+  }
+- {
+    lang: ar,
+    intent: billing,
+    urgency: low,
+    queue: Billing Tier 1,
+    text: "ما هي طرق سداد الفاتورة المتاحة؟",
+  }
+- {
+    lang: ar,
+    intent: technical,
+    urgency: high,
+    queue: Technical Tier 2,
+    text: "الإنترنت المنزلي مقطوع تماماً منذ الصباح والضوء الأحمر يظهر في جهاز الألياف.",
+  }
+- {
+    lang: ar,
+    intent: technical,
+    urgency: medium,
+    queue: Technical Tier 1,
+    text: "سرعة البيانات بطيئة جداً في الجوال منذ أسبوع.",
+  }
+- {
+    lang: ar,
+    intent: technical,
+    urgency: medium,
+    queue: Technical Tier 1,
+    text: "لم أستطع تفعيل الشريحة الإلكترونية، رمز الاستجابة لا يعمل.",
+  }
+- {
+    lang: ar,
+    intent: account,
+    urgency: low,
+    queue: Accounts,
+    text: "كيف يمكنني ترقية باقتي؟ ومتى تبدأ الباقة الجديدة؟",
+  }
+- {
+    lang: ar,
+    intent: account,
+    urgency: low,
+    queue: Accounts,
+    text: "أرغب في نقل ملكية الخط إلى اسم والدي.",
+  }
+- {
+    lang: ar,
+    intent: account,
+    urgency: medium,
+    queue: Accounts,
+    text: "نسيت كلمة المرور للتطبيق ولا تصلني رسالة الرمز.",
+  }
+- {
+    lang: ar,
+    intent: fraud,
+    urgency: critical,
+    queue: Fraud & Security,
+    risk: [fraud],
+    text: "تم سحب 3000 ريال من محفظتي في سحاب باي بدون علمي، أرجو التدخل فوراً!",
+  }
+- {
+    lang: ar,
+    intent: fraud,
+    urgency: high,
+    queue: Fraud & Security,
+    risk: [fraud],
+    text: "اتصل بي شخص يدعي أنه من سحاب وطلب رمز التحقق، هل هذا طبيعي؟",
+  }
+- {
+    lang: ar,
+    intent: complaint,
+    urgency: medium,
+    queue: Customer Relations,
+    text: "هذه شكوى رسمية، الفني لم يحضر للمرة الثالثة ولم يتصل بي أحد.",
+  }
+- {
+    lang: ar,
+    intent: complaint,
+    urgency: high,
+    queue: Customer Relations,
+    risk: [regulator],
+    text: "مشكلتي لم تُحل منذ شهر وسأرفع شكوى إلى هيئة الاتصالات.",
+  }
+- {
+    lang: ar,
+    intent: other,
+    urgency: low,
+    queue: General,
+    text: "ما هي أوقات عمل الفروع يوم الجمعة؟",
+  }
+- {
+    lang: ar,
+    intent: other,
+    urgency: low,
+    queue: General,
+    text: "هل يوجد فرع لسحاب في حي النرجس؟",
+  }

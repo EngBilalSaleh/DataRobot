@@ -1,0 +1,55 @@
+# Routing is deterministic code, not a model decision.
+# The classify agent proposes intent / urgency / risk flags; these rules decide the queue.
+# Rules are checked top to bottom; the first match wins. Omitted conditions match anything.
+
+queues:
+  # Agents currently staffed per queue (used by the Insights view).
+  Fraud & Security: 3
+  Billing Tier 1: 6
+  Billing Tier 2: 2
+  Technical Tier 1: 6
+  Technical Tier 2: 3
+  Accounts: 3
+  Customer Relations: 2
+  General: 2
+
+rules:
+  - name: fraud-any
+    when: { risk_flag: fraud }
+    route: { queue: Fraud & Security, priority: P1, sla_hours: 1 }
+
+  - name: fraud-intent
+    when: { intent: [fraud] }
+    route: { queue: Fraud & Security, priority: P1, sla_hours: 1 }
+
+  - name: legal-or-regulator
+    when: { risk_flag: [legal, regulator] }
+    route: { queue: Customer Relations, priority: P1, sla_hours: 4 }
+
+  - name: billing-urgent
+    when: { intent: [billing], urgency: [high, critical] }
+    route: { queue: Billing Tier 2, priority: P2, sla_hours: 4 }
+
+  - name: billing
+    when: { intent: [billing] }
+    route: { queue: Billing Tier 1, priority: P3, sla_hours: 24 }
+
+  - name: technical-outage
+    when: { intent: [technical], urgency: [high, critical] }
+    route: { queue: Technical Tier 2, priority: P2, sla_hours: 4 }
+
+  - name: technical
+    when: { intent: [technical] }
+    route: { queue: Technical Tier 1, priority: P3, sla_hours: 24 }
+
+  - name: account
+    when: { intent: [account] }
+    route: { queue: Accounts, priority: P3, sla_hours: 24 }
+
+  - name: complaint
+    when: { intent: [complaint] }
+    route: { queue: Customer Relations, priority: P2, sla_hours: 8 }
+
+  - name: default
+    when: {}
+    route: { queue: General, priority: P4, sla_hours: 48 }

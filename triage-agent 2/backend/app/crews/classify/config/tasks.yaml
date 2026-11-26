@@ -1,0 +1,25 @@
+classify:
+  description: >
+    Classify this customer support ticket. Personal data has already been replaced with
+    placeholders such as [PHONE].
+
+    Subject: {subject}
+    Ticket language: {language}
+    Ticket text:
+    {text}
+
+    Label it with:
+    - intent: billing, technical, account, fraud, complaint or other.
+      Use fraud for any unauthorized transaction, account takeover, SIM swap or request
+      for one-time codes. Use complaint when the customer is complaining about how they
+      were treated or about a delay, rather than asking for a specific fix.
+    - product: mobile_postpaid, mobile_prepaid, home_fiber, wallet or general.
+    - urgency: low (information), medium (a problem with a workaround), high (service down
+      or money at stake), critical (fraud in progress, safety, or a total outage for a business).
+    - sentiment: positive, neutral, negative or angry.
+    - confidence: 0 to 1, how sure you are of intent and urgency together.
+    - risk_flags: any of fraud, legal (lawyer, court, lawsuit), regulator (CST or another
+      authority mentioned), vip, safety. Empty if none.
+    - summary: one English sentence describing what the customer needs.
+  expected_output: A classification of the ticket that follows the schema exactly.
+  agent: classifier

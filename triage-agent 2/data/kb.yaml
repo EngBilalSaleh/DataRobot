@@ -1,0 +1,232 @@
+# Knowledge base for "Sahab Telecom", a fictional Saudi operator used for the demo.
+# Every policy below is invented for illustration. Swap in a customer's real KB.
+
+- id: kb-001
+  lang: en
+  product: mobile_postpaid
+  intent: billing
+  title: Why your monthly bill changed
+  body: |
+    Your postpaid bill can change from month to month even if you did not change your plan. The most common reasons are a partial-month charge after a plan change or a new line, roaming or international calls, add-on bundles that renewed automatically, and the end of a promotional discount.
+    Every bill includes 15% VAT. The itemized breakdown in the Sahab app under Billing > Bill details shows each charge with its date.
+    If a promotional discount ended, the bill returns to the plan's standard price. The promotion end date is shown in the app under My plan.
+    If you still do not recognize a charge after checking the breakdown, you can raise a billing dispute. See "How to dispute a charge".
+
+- id: kb-002
+  lang: en
+  product: mobile_postpaid
+  intent: billing
+  title: How to dispute a charge
+  body: |
+    You can dispute any charge within 30 days of the bill date. Raise the dispute in the Sahab app under Billing > Dispute a charge, or reply to your support ticket with the bill date and the charge you do not recognize.
+    The disputed amount is put on hold and does not count toward late payment while we review it.
+    Billing reviews disputes within 3 business days. If the dispute is approved, the credit appears on your next bill or within 5 business days for prepaid balances.
+    Charges older than 30 days can still be reviewed by the Customer Relations team on request.
+
+- id: kb-003
+  lang: en
+  product: mobile_postpaid
+  intent: billing
+  title: Payment methods and due dates
+  body: |
+    Postpaid bills are due 15 days after the bill date. You can pay with mada, credit card, Apple Pay, SADAD (biller code 999), or Sahab Pay.
+    A payment can take up to 24 hours to show on your account. Services are not suspended while a payment is processing.
+    If a bill is unpaid 30 days after the due date, outgoing calls are suspended until the balance is cleared.
+
+- id: kb-004
+  lang: en
+  product: mobile_postpaid
+  intent: billing
+  title: Roaming charges explained
+  body: |
+    Roaming is charged by destination zone. Daily roaming passes give a fixed data allowance per day in the covered countries and are the cheapest option for most trips.
+    Without a pass, data abroad is charged per megabyte at the zone rate, which is why bills after a trip can be higher than expected.
+    Roaming charges from partner networks can arrive up to 30 days after the trip, so they may appear on a later bill.
+
+- id: kb-005
+  lang: en
+  product: home_fiber
+  intent: technical
+  title: Home fiber has no internet
+  body: |
+    First check the lights on the fiber terminal (ONT). A red LOS light means no signal is reaching your home: do not reset the device, report it so a technician can check the line.
+    If the LOS light is off and the PON light is green, restart the router: unplug it for 30 seconds, plug it back in, and wait 3 minutes.
+    If only Wi-Fi is failing, connect a laptop with a cable. If the cable works, the issue is the Wi-Fi settings, not the line.
+    Area outages are shown in the Sahab app under Support > Service status. During an outage you do not need to raise a ticket.
+
+- id: kb-006
+  lang: en
+  product: mobile_postpaid
+  intent: technical
+  title: Slow mobile data
+  body: |
+    Check whether you have used your monthly high-speed allowance in the Sahab app. After the allowance, speed is reduced until the next cycle unless you add a data booster.
+    Restart the phone and make sure 5G or 4G is enabled under mobile network settings.
+    If speeds are slow in one location only, it may be a coverage issue. Report the location from the app so the network team can review it.
+
+- id: kb-007
+  lang: en
+  product: mobile_postpaid
+  intent: technical
+  title: Activating an eSIM
+  body: |
+    eSIM is available on supported phones. Request it in the Sahab app under My lines > Switch to eSIM; identity is verified with Nafath.
+    You will receive a QR code. Scan it from the phone's mobile network settings while connected to Wi-Fi.
+    The physical SIM stops working once the eSIM is active. If activation fails, the QR code can be reissued from the app.
+
+- id: kb-008
+  lang: en
+  product: mobile_postpaid
+  intent: account
+  title: Changing your plan
+  body: |
+    You can upgrade your plan at any time in the Sahab app under My plan > Change plan. Upgrades start immediately and the bill shows a partial-month charge for each plan.
+    Downgrades take effect at the start of the next bill cycle.
+    Plans with a device installment cannot be downgraded below the minimum plan in the installment contract.
+
+- id: kb-009
+  lang: en
+  product: general
+  intent: account
+  title: Transferring line ownership
+  body: |
+    Both the current and the new owner must verify their identity with Nafath. Start the transfer in the app under My lines > Transfer ownership.
+    The line must have no unpaid balance. Transfers complete within 24 hours and the number does not change.
+
+- id: kb-010
+  lang: en
+  product: general
+  intent: account
+  title: Resetting your app password
+  body: |
+    Tap "Forgot password" on the Sahab app sign-in screen and enter your mobile number. A one-time code is sent by SMS.
+    Sahab Telecom will never ask you for this code by phone, email or chat. Anyone who asks for it is not from Sahab.
+    If you no longer have access to the number, visit a Sahab store with your ID.
+
+- id: kb-011
+  lang: en
+  product: wallet
+  intent: fraud
+  title: Unrecognized Sahab Pay transaction
+  body: |
+    If you see a Sahab Pay transaction you did not make, freeze the wallet immediately in the app under Sahab Pay > Freeze wallet. Freezing blocks all outgoing payments; incoming transfers still arrive.
+    Report the transaction to the Fraud and Security team. A specialist contacts you within 1 hour, 24 hours a day.
+    Sahab Pay investigates every report. Where a transaction is confirmed as unauthorized and the customer did not share a one-time code, the amount is refunded within 10 business days of the confirmation.
+    Never share one-time codes or your wallet PIN. Sahab staff will never ask for them.
+
+- id: kb-012
+  lang: en
+  product: general
+  intent: fraud
+  title: SIM swap protection
+  body: |
+    If your phone suddenly shows "No service" and you did not change your SIM, someone may have requested a SIM swap on your number. Contact Sahab immediately from another phone.
+    Every SIM replacement requires Nafath verification and is notified by SMS and email. You can turn on SIM lock in the app so replacements also require a store visit.
+
+- id: kb-013
+  lang: en
+  product: general
+  intent: complaint
+  title: How we handle complaints
+  body: |
+    Every complaint gets a reference number and is acknowledged within 24 hours. Customer Relations aims to resolve complaints within 5 business days and keeps you updated throughout.
+    If you are not satisfied with the outcome, you can ask for an escalation to a Customer Relations manager.
+    If the complaint is still unresolved after 15 business days, you may refer it to the Communications, Space and Technology Commission (CST).
+
+- id: kb-014
+  lang: en
+  product: general
+  intent: other
+  title: Contacting support and store hours
+  body: |
+    Support is available 24 hours a day in the Sahab app chat and by calling 900. Stores open Saturday to Thursday, 10:00 to 23:00, and Friday 16:00 to 23:00.
+    You can track any open ticket in the app under Support > My tickets.
+
+- id: kb-101
+  lang: ar
+  product: mobile_postpaid
+  intent: billing
+  title: لماذا تغيّرت فاتورتك الشهرية
+  body: |
+    قد تتغير فاتورة الخط المفوتر من شهر لآخر حتى لو لم تغيّر باقتك. أكثر الأسباب شيوعاً: احتساب جزء من الشهر بعد تغيير الباقة أو إضافة خط جديد، أو التجوال والمكالمات الدولية، أو تجديد باقات إضافية تلقائياً، أو انتهاء خصم ترويجي.
+    تشمل كل فاتورة ضريبة القيمة المضافة 15%. يمكنك الاطلاع على تفاصيل كل رسم وتاريخه في تطبيق سحاب من الفواتير ثم تفاصيل الفاتورة.
+    إذا انتهى الخصم الترويجي تعود الفاتورة إلى السعر الأساسي للباقة، ويظهر تاريخ انتهاء العرض في التطبيق ضمن باقتي.
+    إذا لم تتعرف على رسم بعد مراجعة التفاصيل، يمكنك تقديم اعتراض على الفاتورة.
+
+- id: kb-102
+  lang: ar
+  product: mobile_postpaid
+  intent: billing
+  title: كيفية الاعتراض على رسم في الفاتورة
+  body: |
+    يمكنك الاعتراض على أي رسم خلال 30 يوماً من تاريخ الفاتورة من تطبيق سحاب: الفواتير ثم الاعتراض على رسم، أو بالرد على تذكرتك مع ذكر تاريخ الفاتورة والرسم المعترض عليه.
+    يتم تعليق المبلغ المعترض عليه ولا يُحتسب كتأخير في السداد أثناء المراجعة.
+    يراجع فريق الفوترة الاعتراض خلال 3 أيام عمل، وإذا تمت الموافقة يظهر المبلغ كرصيد دائن في الفاتورة التالية.
+
+- id: kb-105
+  lang: ar
+  product: home_fiber
+  intent: technical
+  title: انقطاع الإنترنت في الألياف المنزلية
+  body: |
+    تحقق أولاً من أضواء جهاز الألياف. إذا كان ضوء LOS أحمر فهذا يعني عدم وصول الإشارة إلى منزلك، فلا تعِد ضبط الجهاز وقم بالإبلاغ ليقوم فني بفحص الخط.
+    إذا كان ضوء LOS مطفأً وضوء PON أخضر، أعد تشغيل الراوتر بفصله 30 ثانية ثم انتظر 3 دقائق.
+    تظهر الأعطال العامة في التطبيق ضمن الدعم ثم حالة الخدمة، ولا حاجة لفتح تذكرة أثناء العطل العام.
+
+- id: kb-106
+  lang: ar
+  product: mobile_postpaid
+  intent: technical
+  title: بطء بيانات الجوال
+  body: |
+    تحقق من استهلاكك لرصيد السرعة العالية الشهري في التطبيق، فبعد استنفاده تنخفض السرعة حتى بداية الدورة التالية ما لم تضف باقة بيانات إضافية.
+    أعد تشغيل الجوال وتأكد من تفعيل شبكة الجيل الخامس أو الرابع.
+    إذا كان البطء في موقع واحد فقط فقد يكون السبب في التغطية، ويمكنك الإبلاغ عن الموقع من التطبيق.
+
+- id: kb-108
+  lang: ar
+  product: mobile_postpaid
+  intent: account
+  title: تغيير الباقة
+  body: |
+    يمكنك ترقية باقتك في أي وقت من التطبيق: باقتي ثم تغيير الباقة. تبدأ الترقية فوراً وتُحتسب كل باقة بحسب أيام استخدامها في الفاتورة.
+    يسري تخفيض الباقة من بداية دورة الفوترة التالية.
+
+- id: kb-110
+  lang: ar
+  product: general
+  intent: account
+  title: إعادة تعيين كلمة مرور التطبيق
+  body: |
+    اضغط على نسيت كلمة المرور في شاشة الدخول وأدخل رقم جوالك، وستصلك رسالة برمز لمرة واحدة.
+    لن تطلب سحاب منك هذا الرمز أبداً عبر الهاتف أو البريد أو المحادثة، ومن يطلبه ليس من سحاب.
+
+- id: kb-111
+  lang: ar
+  product: wallet
+  intent: fraud
+  title: عملية غير معروفة في محفظة سحاب باي
+  body: |
+    إذا لاحظت عملية في سحاب باي لم تقم بها، جمّد المحفظة فوراً من التطبيق: سحاب باي ثم تجميد المحفظة. يوقف التجميد جميع المدفوعات الصادرة، بينما تستمر التحويلات الواردة.
+    أبلغ فريق الاحتيال والأمن عن العملية، وسيتواصل معك مختص خلال ساعة واحدة على مدار الساعة.
+    تحقق سحاب باي في كل بلاغ، وإذا ثبت أن العملية غير مصرّح بها ولم يشارك العميل رمز التحقق، يُعاد المبلغ خلال 10 أيام عمل من تأكيد ذلك.
+    لا تشارك رموز التحقق أو الرقم السري للمحفظة مع أحد، فموظفو سحاب لا يطلبونها أبداً.
+
+- id: kb-113
+  lang: ar
+  product: general
+  intent: complaint
+  title: آلية معالجة الشكاوى
+  body: |
+    تحصل كل شكوى على رقم مرجعي ويتم تأكيد استلامها خلال 24 ساعة، ويسعى فريق علاقات العملاء إلى حلها خلال 5 أيام عمل مع إبقائك على اطلاع.
+    إذا لم تكن راضياً عن النتيجة يمكنك طلب التصعيد إلى مدير علاقات العملاء.
+    إذا لم تُحل الشكوى بعد 15 يوم عمل، يمكنك رفعها إلى هيئة الاتصالات والفضاء والتقنية.
+
+- id: kb-114
+  lang: ar
+  product: general
+  intent: other
+  title: التواصل مع الدعم وأوقات عمل الفروع
+  body: |
+    الدعم متاح على مدار الساعة عبر محادثة التطبيق أو بالاتصال على 900. تعمل الفروع من السبت إلى الخميس من 10:00 حتى 23:00، والجمعة من 16:00 حتى 23:00.
+    يمكنك متابعة أي تذكرة مفتوحة من التطبيق ضمن الدعم ثم تذاكري.

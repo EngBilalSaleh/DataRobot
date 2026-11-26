@@ -1,0 +1,44 @@
+# Tickets loaded into the inbox on first start (and on "Reset demo"). Synthetic.
+# The first two are the live-demo scenarios: one auto-sent, one held for human review.
+
+- customer: Faisal Al-Harbi
+  channel: email
+  subject: Bill higher than usual this month
+  body: |
+    Hi, my bill this month is about 40 SAR higher than usual and I didn't change my plan or travel anywhere. Can you explain what the extra charge is? My number is 0551234567.
+
+- customer: نورة القحطاني
+  channel: chat
+  subject: سحب مبلغ من محفظتي
+  body: |
+    تم سحب مبلغ 3500 ريال من محفظتي في سحاب باي اليوم بدون علمي! لم أقم بأي تحويل ولم أشارك أي رمز. هذا غير مقبول وأريد استرجاع المبلغ فوراً. رقم جوالي 0559876543
+
+- customer: Omar Siddiqui
+  channel: email
+  subject: Home internet down since morning
+  body: |
+    Our home fiber has had no internet since this morning. The LOS light on the fiber box is red. I work from home, please send someone urgently.
+
+- customer: خالد العتيبي
+  channel: chat
+  subject: ترقية الباقة
+  body: |
+    السلام عليكم، أرغب في ترقية باقتي إلى باقة أعلى. متى تبدأ الباقة الجديدة وكيف تُحسب في الفاتورة؟
+
+- customer: Sarah Mitchell
+  channel: email
+  subject: Third missed installation, formal complaint
+  body: |
+    This is the third time your technician has not shown up for my fiber installation. Nobody called to cancel. This is unacceptable and if it is not fixed this week I will file a complaint with the CST.
+
+- customer: Ahmed Yousef
+  channel: email
+  subject: Question
+  body: |
+    Hello, I have an issue with my account and something with the charges, can someone call me back?
+
+- customer: Lina Haddad
+  channel: chat
+  subject: Someone called asking for my code
+  body: |
+    I just got a call from someone saying they are from Sahab and asked me for the code I received by SMS. I didn't give it. Is this normal?

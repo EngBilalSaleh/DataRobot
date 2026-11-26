@@ -1,0 +1,13 @@
+suggest_staffing:
+  description: >
+    Here are ticket volumes per queue for the last 24 hours compared with the average day
+    of the previous 6 days, plus the agents currently staffed on each queue:
+
+    {aggregates}
+
+    Recommend up to 3 agent moves between queues for the next shift. Prefer moving agents
+    from queues where load per agent is falling to queues where it is rising fastest. Do
+    not move agents out of Fraud & Security. If no move is justified, return no moves and
+    say why in the summary.
+  expected_output: A short summary and a list of staffing moves following the schema exactly.
+  agent: analyst

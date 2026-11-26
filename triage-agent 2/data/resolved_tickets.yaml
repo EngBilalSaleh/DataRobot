@@ -1,0 +1,63 @@
+# Previously resolved tickets. The issue is embedded for search; the resolution is what the
+# agent receives, so it learns from answers that already worked. Synthetic, for the demo.
+
+- id: rt-001
+  lang: en
+  issue: Bill went up by about 50 riyals, customer did not change anything.
+  resolution: A 3-month promotional discount had ended. Explained the end date shown under My plan; no dispute needed.
+- id: rt-002
+  lang: en
+  issue: Charged for roaming but customer says they only used Wi-Fi abroad.
+  resolution: Phone used mobile data in the background on arrival. Raised a goodwill dispute for half the amount and recommended a daily roaming pass for future trips.
+- id: rt-003
+  lang: en
+  issue: Fiber internet down, red light on the box.
+  resolution: Red LOS light confirmed a line fault. Booked a technician visit the same day; line repaired at the street cabinet.
+- id: rt-004
+  lang: en
+  issue: Payment made yesterday still shows as unpaid.
+  resolution: SADAD payments can take up to 24 hours. Confirmed the payment arrived the next morning; no action needed.
+- id: rt-005
+  lang: en
+  issue: Someone took money from my Sahab Pay wallet, I did not do this transfer.
+  resolution: Wallet frozen, case handed to Fraud and Security within the hour. Transfer confirmed unauthorized; refunded after investigation.
+- id: rt-006
+  lang: en
+  issue: eSIM QR code does not work, activation failed.
+  resolution: QR code had already been scanned on another device. Reissued the QR from the app; activation succeeded on Wi-Fi.
+- id: rt-007
+  lang: en
+  issue: Very slow data since the 20th of the month.
+  resolution: High-speed allowance used up. Customer added a 10 GB booster; speeds normal.
+- id: rt-008
+  lang: en
+  issue: Complaint, third technician no-show for fiber installation.
+  resolution: Escalated to a Customer Relations manager, installation booked with a confirmed time slot, one month of service credited as goodwill.
+- id: rt-009
+  lang: en
+  issue: Want to move my line to my son's name.
+  resolution: Guided both parties through Nafath verification in the app; transfer completed the same day.
+- id: rt-010
+  lang: en
+  issue: Got a call from someone claiming to be Sahab asking for my OTP.
+  resolution: Confirmed Sahab never asks for codes. No code was shared; reported the caller number to Fraud and Security and enabled SIM lock.
+- id: rt-101
+  lang: ar
+  issue: ارتفعت الفاتورة هذا الشهر بدون أي تغيير في الباقة.
+  resolution: انتهى الخصم الترويجي بعد ثلاثة أشهر، وتم توضيح تاريخ انتهاء العرض الظاهر في التطبيق، ولا حاجة لاعتراض.
+- id: rt-102
+  lang: ar
+  issue: تم سحب مبلغ من محفظة سحاب باي بدون علمي.
+  resolution: تم تجميد المحفظة وتحويل البلاغ لفريق الاحتيال والأمن خلال ساعة، وبعد التحقق ثبت أن العملية غير مصرح بها وتمت إعادة المبلغ.
+- id: rt-103
+  lang: ar
+  issue: الإنترنت المنزلي مقطوع والضوء أحمر في جهاز الألياف.
+  resolution: أكد ضوء LOS الأحمر وجود عطل في الخط، وتم حجز زيارة فني في نفس اليوم وإصلاح العطل.
+- id: rt-104
+  lang: ar
+  issue: البيانات بطيئة جداً منذ منتصف الشهر.
+  resolution: تم استنفاد رصيد السرعة العالية، وأضاف العميل باقة بيانات إضافية وعادت السرعة لطبيعتها.
+- id: rt-105
+  lang: ar
+  issue: شكوى من تأخر حل مشكلتي لأكثر من أسبوع.
+  resolution: تم تصعيد الشكوى لمدير علاقات العملاء وحل المشكلة خلال يومين مع تعويض بقيمة شهر خدمة.

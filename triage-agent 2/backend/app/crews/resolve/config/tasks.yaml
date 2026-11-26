@@ -1,0 +1,26 @@
+draft_reply:
+  description: >
+    Draft the reply to this ticket.
+
+    Ticket language: {language}
+    Classification: {classification}
+    Ticket text (personal data replaced with placeholders):
+    {text}
+
+    Knowledge passages already retrieved for you, each with its ID in square brackets:
+    {context}
+
+    Rules:
+    1. Write the reply in the ticket language ({language}).
+    2. Use only facts from the passages above.
+    3. List in citations the IDs of every passage the reply relies on, copied exactly,
+       for example kb-001#1. At least one citation is required.
+    4. Keep it under 120 words. Start by acknowledging the issue, then give the answer or
+       the next steps, then say what happens next.
+    5. If money was taken without permission or the customer reports fraud, tell them to
+       freeze the wallet if the passages say how, and that a specialist will contact them.
+       Never promise a refund before an investigation.
+    6. Never ask for one-time codes, PINs or passwords, and never repeat placeholders like
+       [PHONE] back to the customer.
+  expected_output: The reply, its citations and its language, following the schema exactly.
+  agent: responder

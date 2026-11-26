@@ -1,0 +1,28 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.14.1
+    ports: ["6333:6333"]
+    volumes: [qdrant:/qdrant/storage]
+
+  api:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    env_file: .env
+    environment:
+      QDRANT_URL: http://qdrant:6333
+      DATABASE_URL: sqlite:////srv/state/triage.db
+      CORS_ORIGINS: http://localhost:3000
+    volumes: [state:/srv/state, models:/models]
+    ports: ["8000:8000"]
+    depends_on: [qdrant]
+
+  web:
+    build:
+      context: ./frontend
+      args: { NEXT_PUBLIC_API_URL: "http://localhost:8000" }
+    ports: ["3000:3000"]
+    depends_on: [api]
+
+volumes:
+  qdrant:
+  state:
+  models:
